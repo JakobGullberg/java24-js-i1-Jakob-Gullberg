@@ -5,9 +5,6 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="./css/style.css">
     <link rel="shortcut icon" href="#" type="image/x-icon">
-
-
-
     <script src="./js/dicegame.js"defer></script>
     <title>Tärningspelet PIG</title>
 
@@ -28,7 +25,11 @@
           <p><strong>Omgång:</strong> <span id="rounds">0</span></p>
           <p><strong>Omgångens poäng:</strong> <span id="roundScore">0</span></p>
           <p><strong>Total poäng:</strong> <span id="totalScore">0</span></p>
-          <p><strong>Tärningskast:</strong> <span id="diceRoll">-</span></p>
+
+          <div class="dice-wrapper">
+            <img id="diceImage" src="img/dice1.png" alt="Tärning" />
+          </div>
+          
     
           <div class="buttons">
             <div id="rollDice" class="btn">Kasta tärningen 🎲</div>
@@ -36,6 +37,8 @@
           </div>
     
           <div id="gameOver" class="hidden"></div>
+            <p id="gameOverMessage"></p>
+            <button id="restartGame" class="btn hidden">Spela igen</button>
         </div>
       </div>
     
