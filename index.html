@@ -8,14 +8,36 @@
 
 
 
-
-
-    <script src="./js/main.js"></script>
-    <title>Document</title>
+    <script src="./js/dicegame.js"defer></script>
+    <title>Tärningspelet PIG</title>
 
 
 </head>
 <body>
+    <div class="container">
+        <h1>Tärningsspelet PIG 🎲</h1>
+    
+        <form id="nameForm">
+          <label for="playerName">Skriv ditt namn:</label>
+          <input type="text" id="playerName" required />
+          <button type="submit">Starta spelet</button>
+        </form>
+    
+        <div id="gameArea" class="hidden">
+          <h2>Välkommen, <span id="displayName"></span>!</h2>
+          <p><strong>Omgång:</strong> <span id="rounds">0</span></p>
+          <p><strong>Omgångens poäng:</strong> <span id="roundScore">0</span></p>
+          <p><strong>Total poäng:</strong> <span id="totalScore">0</span></p>
+          <p><strong>Tärningskast:</strong> <span id="diceRoll">-</span></p>
+    
+          <div class="buttons">
+            <div id="rollDice" class="btn">Kasta tärningen 🎲</div>
+            <div id="holdScore" class="btn">Frys poäng 🧊</div>
+          </div>
+    
+          <div id="gameOver" class="hidden"></div>
+        </div>
+      </div>
     
 </body>
 </html>

@@ -1,0 +1,46 @@
+body {
+    font-family: sans-serif;
+    background: #f4f4f4;
+    text-align: center;
+    margin: 0;
+    padding: 0;
+  }
+  
+  .container {
+    max-width: 600px;
+    margin: 2rem auto;
+    padding: 2rem;
+    background: white;
+    border-radius: 10px;
+    box-shadow: 0 0 10px rgba(0,0,0,0.1);
+  }
+  
+  input, .btn, button {
+    margin: 0.5rem;
+    padding: 0.5rem 1rem;
+    font-size: 1rem;
+  }
+  
+  .btn {
+    display: inline-block;
+    background: #3498db;
+    color: white;
+    border-radius: 5px;
+    cursor: pointer;
+  }
+  
+  .btn:hover {
+    background: #2980b9;
+  }
+  
+  .hidden {
+    display: none;
+  }
+  
+  #gameOver {
+    margin-top: 1rem;
+    font-size: 1.2rem;
+    color: green;
+    font-weight: bold;
+  }
+  
